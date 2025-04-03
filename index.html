@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rpg de Texto</title>
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+
+    <div id="game-container">
+        <div id="game-text">Bem-vindo Jogador(a)<br> Insira seu nome:</div>
+        
+        <div id="player-name-container">
+            <input type="text" id="player-name" placeholder="Digite seu nome">
+            <button id="start-btn">Começar</button>
+        </div>
+
+        <div id="choices" style="display:none;">
+            <button id="action-1" class="action-btn">Seguir em frente</button>
+            <button id="action-2" class="action-btn">Ir para a esquerda</button>
+            <button id="action-3" class="action-btn">Ir para a direita</button>
+        </div>
+
+        <div id="battle" style="display:none;">
+            <button id="attack-btn">Atacar</button>
+            <button id="defend-btn">Defender</button>
+            <button id="flee-btn">Fugir</button>
+        </div>
+    </div>
+
+    <script src="/src/script.js"></script> 
+</body>
+</html>

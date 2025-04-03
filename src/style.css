@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Open+Sans:wght@300;400;500&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(/src/assets/5.png) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    text-align: center;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    75% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px;
+    padding: 30px;
+    width: 400px; /* Largura do container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px); 
+    transition: background-color 0.3s; 
+}
+
+#game-container:hover {
+    background-color: rgba(255, 255, 255, 0.9); 
+}
+
+#game-container.shake {
+    animation: shake 0.5s ease-in-out;
+    animation-iteration-count: 1;
+}
+
+.shake {
+    animation: shake 0.5s ease-in-out; 
+    animation-iteration-count: 1; 
+}
+
+
+#game-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+#player-name-container {
+    margin-bottom: 20px;
+}
+
+#player-name {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3)
+}
+
+
+#choices, #battle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#battle {
+    display: none;
+}
+
+#choices button {
+    width: 200px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: box-shadow 0.3s;
+}
+
+#choices button:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
+}
+
+#action-1, #action-2, #action-3 {
+    margin-bottom: 15px;
+}
