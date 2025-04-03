@@ -18,7 +18,7 @@ CSS para estilização e imersão visual
 JavaScript para lógica do jogo e sistema de escolhas
 
 🎮 Como jogar?
-Clone ou baixe o repositório
+Clone, baixe o repositório ou teste com o link.
 
 Abra o arquivo index.html no navegador
 
